@@ -5,7 +5,7 @@ def resta(a, b):
     pass
 
 def multiplicacion(a, b):
-    pass
+    return a * b
 
 def division(a, b):
     pass
@@ -35,6 +35,9 @@ def main():
             if opcion == '1':
                 resultado = suma(num1, num2)
                 operacion = "suma"
+            elif opcion == '3':
+                resultado = multiplicacion(num1, num2)
+                operacion = "multiplicacion"     
             else:
                 print("Opción no válida. Por favor, selecciona de nuevo.")
                 continue
