@@ -11,7 +11,7 @@ def division(a, b):
     pass
 
 def porcentaje(a, b):
-    pass
+    return (a * b) / 100
 
 def mostrar_menu():
     print("\nSelecciona una operación:")
@@ -28,7 +28,7 @@ def main():
         mostrar_menu()
         opcion = input("Introduce el número de la operación: ")
 
-        if opcion == '5':
+        if opcion == '6':
             print("Saliendo de la calculadora. ¡Hasta luego!")
             break
 
@@ -39,6 +39,9 @@ def main():
             if opcion == '1':
                 resultado = suma(num1, num2)
                 operacion = "suma"
+            elif opcion == '5':
+                resultado = porcentaje(num1, num2)
+                operacion = "porcentaje"    
             else:
                 print("Opción no válida. Por favor, selecciona de nuevo.")
                 continue
