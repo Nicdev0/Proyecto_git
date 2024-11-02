@@ -10,13 +10,17 @@ def multiplicacion(a, b):
 def division(a, b):
     pass
 
+def porcentaje(a, b):
+    return (a * b) / 100
+
 def mostrar_menu():
     print("\nSelecciona una operación:")
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicación")
     print("4. División")
-    print("5. Salir")
+    print("5. Porcentaje")
+    print("6. Salir")
 
 def main():
     print("Bienvenido a la calculadora sencilla")
@@ -24,7 +28,7 @@ def main():
         mostrar_menu()
         opcion = input("Introduce el número de la operación: ")
 
-        if opcion == '5':
+        if opcion == '6':
             print("Saliendo de la calculadora. ¡Hasta luego!")
             break
 
@@ -37,7 +41,10 @@ def main():
                 operacion = "suma"
             elif opcion == '3':
                 resultado = multiplicacion(num1, num2)
-                operacion = "multiplicacion"     
+                operacion = "multiplicación"
+            elif opcion == '5':
+                resultado = porcentaje(num1, num2)
+                operacion = "porcentaje"
             else:
                 print("Opción no válida. Por favor, selecciona de nuevo.")
                 continue
