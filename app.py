@@ -15,6 +15,9 @@ def division(a, b):
 def porcentaje(a, b):
     return (a * b) / 100
 
+def porcentaje(a, b):
+    pass
+
 def mostrar_menu():
     print("\nSelecciona una operación:")
     print("1. Suma")
