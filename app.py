@@ -2,7 +2,7 @@ def suma(a, b):
     return a + b
 
 def resta(a, b):
-    pass
+    return a - b
 
 def multiplicacion(a, b):
     return a * b
@@ -14,9 +14,6 @@ def division(a, b):
 
 def porcentaje(a, b):
     return (a * b) / 100
-
-def porcentaje(a, b):
-    pass
 
 def mostrar_menu():
     print("\nSelecciona una operación:")
@@ -44,6 +41,9 @@ def main():
             if opcion == '1':
                 resultado = suma(num1, num2)
                 operacion = "suma"
+            elif opcion == '2':
+                resultado = resta(num1, num2)
+                operacion = "resta"
             elif opcion == '3':
                 resultado = multiplicacion(num1, num2)
                 operacion = "multiplicación"
