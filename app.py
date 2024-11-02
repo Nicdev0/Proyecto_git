@@ -41,7 +41,7 @@ def main():
                 operacion = "suma"
             elif opcion == '2':
                 resultado = resta(num1, num2)
-                operacion = "resta"    
+                operacion = "resta"     
             else:
                 print("Opción no válida. Por favor, selecciona de nuevo.")
                 continue
