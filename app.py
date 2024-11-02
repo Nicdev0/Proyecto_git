@@ -5,13 +5,15 @@ def resta(a, b):
     return a - b
 
 def multiplicacion(a, b):
-    pass
+    return a * b
 
 def division(a, b):
-    pass
+    if b == 0:
+        return "Error: División por cero."
+    return a / b
 
 def porcentaje(a, b):
-    pass
+    return (a * b) / 100
 
 def mostrar_menu():
     print("\nSelecciona una operación:")
@@ -28,7 +30,7 @@ def main():
         mostrar_menu()
         opcion = input("Introduce el número de la operación: ")
 
-        if opcion == '5':
+        if opcion == '6':
             print("Saliendo de la calculadora. ¡Hasta luego!")
             break
 
@@ -41,7 +43,16 @@ def main():
                 operacion = "suma"
             elif opcion == '2':
                 resultado = resta(num1, num2)
-                operacion = "resta"     
+                operacion = "resta"
+            elif opcion == '3':
+                resultado = multiplicacion(num1, num2)
+                operacion = "multiplicación"
+            elif opcion == '4':
+                resultado = division(num1, num2)
+                operacion = "división"
+            elif opcion == '5':
+                resultado = porcentaje(num1, num2)
+                operacion = "porcentaje"
             else:
                 print("Opción no válida. Por favor, selecciona de nuevo.")
                 continue
