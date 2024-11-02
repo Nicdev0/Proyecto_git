@@ -8,7 +8,9 @@ def multiplicacion(a, b):
     pass
 
 def division(a, b):
-    pass
+    if b == 0:
+        return "Error: División por cero."
+    return a / b
 
 def mostrar_menu():
     print("\nSelecciona una operación:")
@@ -35,6 +37,9 @@ def main():
             if opcion == '1':
                 resultado = suma(num1, num2)
                 operacion = "suma"
+            elif opcion == '4':
+                resultado = division(num1, num2)
+                operacion = "división"    
             else:
                 print("Opción no válida. Por favor, selecciona de nuevo.")
                 continue
