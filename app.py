@@ -10,13 +10,17 @@ def multiplicacion(a, b):
 def division(a, b):
     pass
 
+def porcentaje(a, b):
+    pass
+
 def mostrar_menu():
     print("\nSelecciona una operación:")
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicación")
     print("4. División")
-    print("5. Salir")
+    print("5. Porcentaje")
+    print("6. Salir")
 
 def main():
     print("Bienvenido a la calculadora sencilla")
