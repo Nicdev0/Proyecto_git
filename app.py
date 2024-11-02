@@ -8,7 +8,9 @@ def multiplicacion(a, b):
     return a * b
 
 def division(a, b):
-    pass
+    if b == 0:
+        return "Error: División por cero."
+    return a / b
 
 def porcentaje(a, b):
     return (a * b) / 100
@@ -42,6 +44,9 @@ def main():
             elif opcion == '3':
                 resultado = multiplicacion(num1, num2)
                 operacion = "multiplicación"
+            elif opcion == '4':
+                resultado = division(num1, num2)
+                operacion = "división"
             elif opcion == '5':
                 resultado = porcentaje(num1, num2)
                 operacion = "porcentaje"
